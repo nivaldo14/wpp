@@ -1,0 +1,9 @@
+codigo amigo no link -- quando for empresa .. codigo nao vinculado ao amigo
+
+Boas vinda e mostra cardapio
+Vendas
+resumo pedido
+endereco de entrega
+--> escolher  instituicao de caridade
+encerramento
+

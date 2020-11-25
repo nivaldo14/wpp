@@ -1,0 +1,12 @@
+[1123/130955.521:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1123/131654.844:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1123/131654.846:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1123/131654.846:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1123/132909.410:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[1123/132909.412:ERROR:exception_snapshot_win.cc(99)] thread ID 13400 not found in process
+[1123/132909.412:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1123/134114.424:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1123/140312.014:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[1123/140312.018:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1123/140312.018:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1123/140312.018:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
