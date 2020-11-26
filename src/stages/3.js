@@ -3,22 +3,23 @@ const stages = require('../stages')
 
 
 
-function execute(user, msg) {
+function execute(user, msg,nome) {
 
+   
     if (msg === '*') {
-        banco.user[user].stage = 0
+        banco.db[user].stage = 0
         return ["Pedido Cancelado com Sucesso"]
 
     }
 
     if (msg === '#') {
-        banco.user[user].stage = 4
+        banco.db[user].stage = 4
         
-        return stages.step[4].obj.execute(user,"")
+        return stages.step[4].obj.execute(user,"", nome)
 
     }
-    return [`Conrima endereco de entrega:${msg} \n`,
-        "'''Digite # para continuar ou * para Cancelar '''"]
+    return [`Conrima endereco de entrega:\n ${msg} `,
+        "```Digite # para continuar ou * para Cancelar ```"]
 
 }
 exports.execute = execute

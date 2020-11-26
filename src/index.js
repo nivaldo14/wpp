@@ -4,8 +4,8 @@ const banco = require("./banco")
 const stages = require("./stages")
 
 
-// let resp = stages.step[getStage('554196165855@c.us')].obj.execute(
-//   '554196165855@c.us',
+// let resp = stages.step[getStage('5541961658559@c.us')].obj.execute(
+//   '5541961658559@c.us',
 //   'testebody',
 // )
 
@@ -31,13 +31,16 @@ venom
 //554196165855@c.us
 function start(client) {
   
+  
   client.onMessage((message) => {
-      //verificar se tem o usuario no objeto banco
-    banco.db[message.from]===undefined ?  banco.db[message.from]={stage:0,itens:[]} : message.from
-    console.log(banco.db)
+   console.log(message)
+    if (banco.db[message.from]===undefined ) banco.db[message.from]={stage:0,itens:[]}
+   // console.log( getStage(message.from) ,  banco.db[message.from])
     let resp = stages.step[getStage(message.from)].obj.execute(
       message.from,
       message.body,
+      message.sender.pushname,
+
     )
    
     for (let index = 0; index < resp.length; index++) {
